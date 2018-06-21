@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GOL Gerodes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Universe.js"></script>
+</head>
+<body onresize="canvasInit()">
+<div id="navigationBar">
+    <div id="resolutionSliderContainer">
+        <input type="range" min="8" max="50" value="30" class="slider" onchange="resSliderChange(this.value)"
+               id="resolutionSlider">
+        <h4 id="resolutionText">Resolution 30</h4>
+    </div>
+    <br>
+    <div id="speedSliderContainer">
+        <input type="range" min="10" max="1000" value="300" step="10" onchange="speedSliderChange(this.value)"
+               class="slider" id="speedSlider">
+        <h4 id="speedText">Aging speed 0.5 s</h4>
+    </div>
+    <br>
+    <div id="buttons">
+        <button onclick="createRandomUniverse()">Seed</button>
+        <button onclick="init()">Clear</button>
+        <button onclick="ageAndDraw()">Step</button>
+        <button onclick="animateCanvas()">Play</button>
+        <button onclick="stopAnimate()">Pause</button>
+    </div>
+</div>
+<canvas></canvas>
+<h2 id="generationCounter">Generation 0</h2>
+<script src="canvas.js"></script>
+</body>
+</html>

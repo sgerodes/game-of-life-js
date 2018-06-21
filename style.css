@@ -1,0 +1,18 @@
+#generationCounter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#speedSliderContainer, #resolutionSliderContainer, #navigationBar {
+    text-align: center;
+}
+
+#speedSlider, #speedText, #resolutionSlider, #resolutionText {
+    display: inline;
+}
+
+#buttons {
+    padding-bottom: 15px;
+}
